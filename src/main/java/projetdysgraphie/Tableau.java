@@ -162,7 +162,7 @@ public class Tableau {
                     cell.setCellValue(nbP);
                 }
             }
-            File file = new File("C:/ProjetDysgraphie-master-" + version + "/Dataset/" + fileName);
+            File file = new File("./Dataset/" + fileName);
             file.getParentFile().mkdirs();
             outFile = new FileOutputStream(file);
             workbook.write(outFile);

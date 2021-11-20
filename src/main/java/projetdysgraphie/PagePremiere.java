@@ -92,7 +92,7 @@ public class PagePremiere extends javax.swing.JFrame {
      */
     public PagePremiere(Trace t) throws Exception {
         this.getContentPane().setBackground(Color.decode("#F69679"));
-        this.nbFichiers = countFiles("C:/ProjetDysgraphie-master-" + version + "/Dataset");
+        this.nbFichiers = countFiles("./Dataset");
         initComponents();
         tempsDebut = System.currentTimeMillis();
         Toolkit tk = Toolkit.getDefaultToolkit();
@@ -178,7 +178,7 @@ public class PagePremiere extends javax.swing.JFrame {
 
     public PagePremiere() throws Exception {
         this.getContentPane().setBackground(Color.decode("#F69679"));
-        this.nbFichiers = countFiles("C:/ProjetDysgraphie-master-" + version + "/Dataset");
+        this.nbFichiers = countFiles("./Dataset");
         initComponents();
         tempsDebut = System.currentTimeMillis();
         Toolkit tk = Toolkit.getDefaultToolkit();
@@ -302,7 +302,7 @@ public class PagePremiere extends javax.swing.JFrame {
         } catch (Exception ex) {
             Logger.getLogger(PagePremiereLettre.class.getName()).log(Level.SEVERE, null, ex);
         }
-        nomFichier = ("C:/ProjetDysgraphie-master-" + version + "/Dataset/" + nomFichier(nbFichiers, sexe, niveau));
+        nomFichier = ("./Dataset/" + nomFichier(nbFichiers, sexe, niveau));
     }
 
     /**

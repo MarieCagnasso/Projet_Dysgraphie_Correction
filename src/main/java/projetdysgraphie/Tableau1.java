@@ -175,7 +175,7 @@ public class Tableau1 {
                     cell.setCellValue(niveau);
                 }
             }
-            File file = new File("C:/ProjetDysgraphie-master-" + version + "/Dataset/" + fileName);
+            File file = new File("./Dataset/" + fileName);
             System.out.println("je suis le fichier"+file);
             file.getParentFile().mkdirs();
             outFile = new FileOutputStream(file);
